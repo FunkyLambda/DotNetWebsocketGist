@@ -28,6 +28,8 @@ namespace WebsocketGist
 
         private async Task keepConnectingUntilConnected()
         {
+            _socket = new ClientWebSocket();
+
             try
             {
                 bool socket_connected = false;
@@ -35,7 +37,6 @@ namespace WebsocketGist
                 {
                     try
                     {
-                        _socket = new ClientWebSocket();
                         await _socket.ConnectAsync(new Uri("wss://ws.bitmex.com/realtime"), CancellationToken.None);
                         socket_connected = true;
                     }
