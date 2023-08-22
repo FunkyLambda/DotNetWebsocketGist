@@ -134,7 +134,7 @@ namespace WebsocketGist
             using (var reader = new StreamReader(ms, Encoding.UTF8))
             {
                 var message = await reader.ReadToEndAsync();
-                Console.WriteLine(message);
+                //Console.WriteLine(message);
             }
         }
 

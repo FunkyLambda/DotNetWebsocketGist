@@ -1,5 +1,5 @@
 ﻿This is a terminal app that connects to the Bitmex websocket API, subscribing to the trade and orderbook topics.
-It simply prints every message received.
+It simply converts every message received to a string.
 
 To run this terminal app, simply press the Play button in Visual Studio for Mac.
 The project is setup to open in an external Terminal window.
